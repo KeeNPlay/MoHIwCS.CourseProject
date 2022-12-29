@@ -1,0 +1,76 @@
+main{
+    position: absolute;
+    width: calc(100% - 330px);
+    left: 330px;
+    transition: 0.5s;
+}
+
+main.active{
+    width: calc(100% - 120px);
+    left: 120px;
+}
+
+nav .topbar{
+    margin: 20px 41px;
+    height: 40px;
+}
+
+.toggle{
+    width: 40px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 991px) {
+    .navigation{
+        left: -330px;
+    }
+    .navigation.active{
+        width: 330px;
+        left: 0;
+    }
+    .navigation.active ul li a .title{
+        display: block;
+    }
+    main{
+        width: 100%;
+        left: 0;
+    }
+    main.active{
+        width: calc(100% - 330px);
+        left: 330px;
+    }
+    .navigation.active ul li:nth-child(1) a img{
+        display: block;
+    }
+
+    .navigation.active ul li:nth-child(1) a .gsp-icon{
+        display: none;
+    }
+}
+
+@media (max-width: 480px){
+    .navigation{
+        width: 100%;
+        left: -100%;
+        z-index: 1000;
+    }
+    .navigation.active{
+        width: 100%;
+        left: 0;
+    }
+    .toggle{
+        z-index: 10001;
+    }
+    main.active{
+        left: 210px;
+    }
+    main.active .toggle{
+        position: fixed;
+        filter: invert(100%) brightness(200%);
+        width: 30px;
+    }
+    main.active .toggle img{
+        width: 30px;
+    }
+}

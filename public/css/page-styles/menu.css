@@ -1,0 +1,35 @@
+
+.main-container .menu .menu-item{
+    background: var(--white);
+    height: 80px;
+    border-radius: 16px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.main-container .menu .menu-item span{
+    display: block;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--primary);
+    transition: 0.2s;
+}
+
+.main-container .menu .menu-item:hover{
+    background: var(--primary);
+}
+
+.main-container .menu .menu-item:hover span{
+    color: var(--white);
+}
+
+@media (max-width: 768px) {
+    .main-container .menu .menu-item span{
+        font-size: 24px;
+    }
+}

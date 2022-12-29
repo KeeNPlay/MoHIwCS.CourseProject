@@ -1,0 +1,130 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    display: grid;
+    background: var(--white);
+    grid-template-columns: repeat(2, 1fr);
+    padding: 72px 0;
+    border-radius: 16px;
+}
+
+.login-illustration{
+    display: block;
+    width: 450px;
+    margin: 0 auto;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*padding: 0 86px;*/
+}
+
+.form-container .logo {
+    display: block;
+    margin: 0 auto;
+    width: 217px;
+    fill: var(--primary);
+}
+
+.form-container h1{
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-top: 12px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--black1);
+}
+
+.login-form{
+    margin-top: 30px;
+}
+
+.login-form .input-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+    width: 320px;
+}
+
+.login-form .input-form label{
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--black1);
+}
+
+.login-form .input-form input{
+    margin-top: 6px;
+    padding: 10px 16px;
+    border: 1px solid #D6E4EC;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.login-form .input-form input::placeholder{
+    font-size: 16px;
+    color: #D6E4EC;
+    transition: 1s;
+}
+
+.login-form .input-form input:focus,
+.login-form .input-form input:active,
+.login-form .input-form input:hover{
+    outline: none;
+    border: 1px solid var(--primary);
+}
+
+.login-form .input-form input:focus::placeholder,
+.login-form .input-form input:active::placeholder,
+.login-form .input-form input:hover::placeholder{
+    color: var(--primary);
+}
+
+.login-form .login-button{
+    padding: 8px 0;
+    margin-top: 18px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    background: var(--primary);
+    color: var(--grey);
+    width: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.login-form .login-button:hover{
+    background: var(--secondary);
+    color: var(--grey);
+}
+
+@media (max-width: 768px){
+    .container{
+        grid-template-columns: 1fr;
+        padding: 72px;
+    }
+    .illustration-container{
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    body{
+        background-image: none;
+        background-color: var(--white);
+    }
+    .container{
+        padding: 32px;
+    }
+    .login-form .input-form{
+        width: 210px;
+    }
+}

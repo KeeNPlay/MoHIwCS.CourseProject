@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+    --primary: #4D74FD;
+    --secondary: #0072BC;
+    --white: #fff;
+    --grey: #FBFBFB;
+    --black1: #001433;
+    --black2: #F6F6F6;
+    --bg: #EFF3FD;
+    --danger: #FD4D4D;
+    --warning: #FDC14D;
+    --success: #50C63D;
+    --info: #4D74FD;
+    --unactive: #D9DDEA;
+    --table-th-bg: #F7F8FA;
+    --table-th: #505470;
+    --search-input-text: #B1B1B1;
+    --search-input-border: #D6E4EC;
+    --hr: #EFF0F4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    background-image: url("../../img/bg.png");
+    background-color: var(--bg);
+    background-size: cover; /* for IE9+, Safari 4.1+, Chrome 3.0+, Firefox 3.6+ */
+    -webkit-background-size: cover; /* for Safari 3.0 - 4.0 , Chrome 1.0 - 3.0 */
+    -moz-background-size: cover; /* optional for Firefox 3.6 */
+    -o-background-size: cover; /* for Opera 9.5 */
+}
+
+.main-container{
+    margin: 0 41px;
+}

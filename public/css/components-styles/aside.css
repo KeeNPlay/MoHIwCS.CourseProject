@@ -1,0 +1,105 @@
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+}
+
+.navigation{
+    position: fixed;
+    width: 330px;
+    height: 100%;
+    background: var(--primary);
+    border-left: 44px solid var(--primary);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.navigation.active{
+    width: 120px;
+}
+
+.navigation ul:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation ul:nth-child(2){
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+}
+
+.navigation ul li{
+    position: relative;
+    width: 200%;
+    list-style: none;
+}
+
+/*.navigation ul li:hover{
+    background: var(--white);
+}*/
+
+.navigation ul .gsp-logo{
+    margin-top: 46px;
+    margin-bottom: 20px;
+}
+
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: var(--white);
+}
+
+/*.navigation ul li:hover a{
+    color: var(--primary);
+}*/
+
+.navigation ul li a img{
+    height: 24px;
+    width: 24px;
+    margin: 10px 0;
+}
+
+.navigation ul .gsp-logo a img{
+    width: 234px;
+    height: 35px;
+}
+
+.navigation ul .gsp-logo a .gsp-icon{
+    width: 32px;
+    height: 32px;
+    display: none;
+}
+
+.navigation.active ul .gsp-logo a img{
+    display: none;
+}
+
+.navigation.active ul .gsp-logo a .gsp-icon{
+    display: block;
+}
+
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    margin-left: 16px;
+    line-height: 48px;
+    letter-spacing: 1px;
+}
+
+.navigation.active ul li a .title{
+    display: none;
+}
+
+
+

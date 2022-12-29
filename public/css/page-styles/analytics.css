@@ -1,0 +1,113 @@
+.title h2{
+    margin-top: 25px;
+    color: var(--primary);
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 40px;
+}
+
+.analytics .analytic-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 12px;
+    margin-top: 30px;
+}
+
+.analytics .analytic-cards .card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    background: var(--white);
+    border-radius: 12px;
+    padding: 21px 30px;
+    transition: 0.2s;
+}
+
+.analytics .analytic-cards .card:hover{
+    background: var(--primary);
+}
+
+.analytics .analytic-cards .card .title{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.3;
+    color: var(--black1);
+    transition: 0.2s;
+}
+
+.analytics .analytic-cards .card:hover .title{
+    color: var(--white);
+}
+
+.analytics .analytic-cards .card .number{
+    font-size: 71px;
+    font-weight: bold;
+    color: var(--primary);
+    transition: 0.2s;
+}
+
+.analytics .analytic-cards .card:hover .number{
+    color: var(--white);
+}
+
+.analytics .statistical-analytic{
+    margin-top: 25px;
+    background: var(--white);
+    border-radius: 12px;
+    padding: 20px 25px;
+    margin-bottom: 45px;
+}
+
+.analytics .statistical-analytic .title{
+    text-align: center;
+}
+
+.analytics .statistical-analytic .title h3{
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--black1);
+}
+
+.analytics .statistical-analytic .statistical-analytic-content{
+    margin-top: 20px;
+}
+
+.analytics .statistical-analytic .statistical-analytic-content .statistical-analytic-item{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 0.3px;
+    color: var(--black1);
+}
+
+.analytics .statistical-analytic .statistical-analytic-content .statistical-analytic-item .statistical-analytic-item-number{
+    color: var(--primary);
+}
+
+@media (max-width: 1300px){
+    .analytics .analytic-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .analytics .analytic-cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .analytics .statistical-analytic .statistical-analytic-content .statistical-analytic-item{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px){
+    .analytics .statistical-analytic .title h3{
+        font-size: 20px;
+    }
+    .analytics .statistical-analytic .statistical-analytic-content .statistical-analytic-item{
+        font-size: 12px;
+    }
+}

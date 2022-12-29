@@ -1,0 +1,177 @@
+.settings-card-container{
+    margin-top: 30px;
+    padding: 35px 48px 25px 48px;
+    background: var(--white);
+    border-radius: 16px;
+}
+
+.settings-card-container .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.settings-card-container .header div{
+    display: flex;
+}
+
+.settings-card-container .header .header-inputs {
+    margin-left: 28px;
+    display: flex;
+    flex-direction: column;
+}
+
+.settings-card-container .header .header-inputs input[type=text] {
+    border: none;
+    color: var(--black1);
+}
+
+.settings-card-container .header .header-inputs input[type=text]:focus{
+    outline: none;
+}
+
+.settings-card-container .header .header-inputs input[type=text]:nth-child(1){
+    width: 550px;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.settings-card-container .header .header-inputs input[type=text]:nth-child(2){
+    font-size: 24px;
+    color: var(--table-th);
+    letter-spacing: 1px;
+}
+
+.settings-card-container .profile-info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.settings-card-container .profile-info label{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-left: 26px;
+    margin-bottom: 7px;
+}
+
+.settings-card-container .profile-info .input{
+    border: none;
+    height: 50px;
+    padding: 0 26px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    background: var(--black2);
+    color: var(--table-th);
+    border-radius: 30px;
+    margin-bottom: 20px;
+    transition: 0.5s;
+    outline-color: var(--search-input-border);
+}
+
+.settings-card-container .btn{
+    display: block;
+    border: none;
+    width: 248px;
+    height: 40px;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--white);
+    background: var(--primary);
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.settings-card-container .btn:hover{
+    background: var(--secondary);
+}
+
+.settings-card-container .settings-btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.settings-card-container .settings-btn .btn.settings{
+    background: var(--white);
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    transition: 0.2s;
+}
+
+.settings-card-container .settings-btn .btn.settings:hover{
+    background: var(--primary);
+    color: var(--white);
+}
+
+
+@media (max-width: 1200px) {
+    .settings-card-container .header{
+        flex-direction: column;
+    }
+    .settings-card-container .header .header-inputs input[type=text]{
+        width: 350px;
+    }
+    .settings-card-container .header .header-inputs input[type=text]:nth-child(1){
+        width: 350px;
+    }
+    .settings-card-container .btn{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .settings-card-container .header div {
+        flex-direction: column;
+    }
+    .settings-card-container .header img{
+        width: 150px;
+    }
+    .settings-card-container .header .header-inputs{
+        margin-left: 0;
+    }
+    .settings-card-container .header .header-inputs input[type=text]{
+        width: 300px;
+    }
+    .settings-card-container .header .header-inputs input[type=text]:nth-child(1){
+        width: 300px;
+    }
+    .settings-card-container{
+        padding: 28px;
+    }
+    .settings-card-container .settings-btn{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .settings-card-container .header .img-container img{
+        width: 100px;
+        align-self: center;
+    }
+    .settings-card-container .header .header-inputs input[type=text]:nth-child(1){
+        width: auto;
+        font-size: 18px;
+    }
+    .settings-card-container .header .header-inputs input[type=text]:nth-child(2){
+        width: auto;
+        font-size: 12px;
+    }
+    .settings-card-container .profile-info label{
+        margin-left: 10px;
+        font-size: 12px;
+    }
+    .settings-card-container .profile-info .input{
+        height: 25px;
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    .settings-card-container .btn{
+        width: 170px;
+    }
+}
